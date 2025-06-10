@@ -24,7 +24,7 @@
     "eval\\(.*\\)"
   ],
   "Kannadafy": [
-    "exec\\(\"\"\\s*\\.\\s*join\\(map\\(chr,\\[int\\(\"\"\\.join\\(str\\(\\{['ಅಆಇ']",
+    "exec\\(\\\"\\\"\\s*\\.\\s*join\\(map\\(chr,\\[int\\(\\\"\\\"\\.join\\(str\\(\\{['ಅಆಇ']",
     "[ಅಆಇ]{2,}"
   ],
   "py-fuscate": [
@@ -32,10 +32,22 @@
     "(marshal|bz2|gzip|lzma|zlib)"
   ],
   "g0w6y-obfuscator": [
-  "(# -\\*- coding: utf-8 -\\*-.*?){2,}", 
-  "(import\\s+(\\w+).*\\n)(?:.*\\1){1,}", 
-  "import\\s+(inspect|dis|ctypes).*", 
-  "from\\s+ctypes\\s+import\\s+memmove"
+    "(# -\\*- coding: utf-8 -\\*-.*?){2,}",
+    "(import\\s+(\\w+).*\\n)(?:.*\\1){1,}",
+    "import\\s+(inspect|dis|ctypes).*",
+    "from\\s+ctypes\\s+import\\s+memmove"
+  ],
+  "Hyperion": [
+    "__obfuscator__\\s*=\\s*['\"]?Hyperion['\"]?",
+    "from\\s+math\\s+import\\s+prod\\s+as\\s+Power"
+  ],
+  "Berserker": [
+    "class\\s+Berserker\\(\\):",
+    "_encode\\s*=\\s*lambda.*?chr\\(int\\(_byte\\).*?for _byte in str\\(_decode\\)\\.split"
+  ],
+  "SourceDefender": [
+  "import sourcedefender",
+  "from sourcedefender import",
+  "__sourcedefender__"
 ]
-
 }

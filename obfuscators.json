@@ -1,0 +1,41 @@
+{
+  "PyArmor": [
+    "pyarmor_runtime",
+    "pytransform"
+  ],
+  "Nuitka": [
+    "__compiled__",
+    "compiled_module"
+  ],
+  "Base64 encoded": [
+    "(?:exec|eval)\\(base64\\.b64decode"
+  ],
+  "Hex encoded": [
+    "(?:exec|eval)\\(bytes\\.fromhex"
+  ],
+  "Marshal": [
+    "marshal\\.loads"
+  ],
+  "Zlib compression": [
+    "zlib\\.decompress"
+  ],
+  "Runtime code generation": [
+    "exec\\(.*\\)",
+    "eval\\(.*\\)"
+  ],
+  "Kannadafy": [
+    "exec\\(\"\"\\s*\\.\\s*join\\(map\\(chr,\\[int\\(\"\"\\.join\\(str\\(\\{['ಅಆಇ']",
+    "[ಅಆಇ]{2,}"
+  ],
+  "py-fuscate": [
+    "exec\\(marshal\\.loads\\((?:gzip|lzma|bz2|zlib)\\.decompress",
+    "(marshal|bz2|gzip|lzma|zlib)"
+  ],
+  "g0w6y-obfuscator": [
+  "(# -\\*- coding: utf-8 -\\*-.*?){2,}", 
+  "(import\\s+(\\w+).*\\n)(?:.*\\1){1,}", 
+  "import\\s+(inspect|dis|ctypes).*", 
+  "from\\s+ctypes\\s+import\\s+memmove"
+]
+
+}

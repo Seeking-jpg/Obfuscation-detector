@@ -12,7 +12,7 @@ This tool is ideal for malware analysts, reverse engineers, and developers audit
 
 ## 🚀 Features
 
-- Detects common Python obfuscators (e.g., PyArmor, Nuitka, pyminifier)
+- Detects common Python obfuscators (e.g., PyArmor, Nuitka, pyminifier and random Github obfuscators)
 - Calculates and scores entropy to identify obfuscated strings
 - Identifies suspicious code constructs, such as dynamic `exec`/`eval` usage
 - Classifies obfuscation techniques based on detection results
@@ -22,6 +22,7 @@ This tool is ideal for malware analysts, reverse engineers, and developers audit
 ## 🧠 Planned Features
 
 - [ ] Heuristic-based scoring system
+- [ ] Decoding of public stealer's (discord token grabber)
 - [ ] Detection of encrypted blobs and their potential decoding routines
 - [ ] Detection of runtime decryption and unpacking
 - [ ] Visual report generation (e.g., HTML or JSON output)
